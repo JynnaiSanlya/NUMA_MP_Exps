@@ -1,0 +1,1 @@
+add_executable(NUMA_access NUMA_access.c)
