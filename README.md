@@ -4,10 +4,12 @@ A log-like repo to store NUMA Exp & Res under multi-thread accessing memory situ
 
 ## Project Layout
 
+```
 NUMA_MP_Exps
 |- conclusions 存放了一些结论或者数据
 |- src 存放了测试的代码
 `- build 构建目录
+```
 
 ## 使用说明
 
