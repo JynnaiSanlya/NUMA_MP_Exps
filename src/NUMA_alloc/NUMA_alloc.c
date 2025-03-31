@@ -17,7 +17,14 @@ int main(int argc, char *argv[]) {
     {
         int thread_id = omp_get_thread_num();
         int *ptr = (int *)malloc(atoi(argv[1])*sizeof(int)); // 分配内存
-        sleep(3);
+        
+        for (int i = 0; i < 1000000000; i++) {
+            // Busy-wait loop to simulate approximately one second of delay
+        }
+        // you might see strange behavior if you uncomment the following line.
+        // Meanwhile, the for-loop above should be commented as well.
+        // By the way, modify the code blocks below the if clause.
+        // sleep(2);
         if (!ptr) {
             printf("Thread %d: malloc failed\n", thread_id);
         }
@@ -37,7 +44,14 @@ int main(int argc, char *argv[]) {
 
             free(ptr);
         }
-        sleep(3);
+        
+        for (int i = 0; i < 1000000000; i++) {
+            // Busy-wait loop to simulate approximately one second of delay
+        }
+        // you might see strange behavior if you uncomment the following line.
+        // Meanwhile, the for-loop above should be commented as well.
+        // By the way, modify the code blocks above the if clause.
+        // sleep(2);
     }
     return 0;
 }
