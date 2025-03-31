@@ -1,0 +1,1 @@
+add_executable(NUMA_mem_interference NUMA_mem_interference.c)

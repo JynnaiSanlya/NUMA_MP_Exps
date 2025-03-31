@@ -1,0 +1,1 @@
+add_executable(NUMA_alloc NUMA_alloc.c)

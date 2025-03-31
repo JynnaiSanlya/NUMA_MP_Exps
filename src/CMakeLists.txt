@@ -1,1 +1,3 @@
 add_subdirectory(NUMA_access)
+add_subdirectory(NUMA_alloc)
+add_subdirectory(NUMA_mem_interference)
