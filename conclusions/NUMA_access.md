@@ -1,6 +1,8 @@
 `矩阵大小为4M。`
 
-| factor | 6,0,0,0 | 6,1,1,0 | 6,0,1,0 | 6,0,1,1 |
+`parameters: $THREAD_NUM $THREAD_NUMA_NODE $MEM_NUMA_NODE $ALLOW_MOVE`
+
+| parameters | 6,0,0,0 | 6,1,1,0 | 6,0,1,0 | 6,0,1,1 |
 | - | - | - | - | - |
 | res(s) | 15.2 | 15.3 | 48.6 | 18.3 |
 
