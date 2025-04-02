@@ -3,7 +3,7 @@
 
 - interleaved并不差
 > interleave是指把申请到的内存均匀分散到两个NUMA节点中。可以用taskset -c 0,1,2,3,4,5 ./NUMA_mem_interference <分布方式>使得进程只能在这6个CPU核心，也就是NUMA node1上运行。在这一前提下实测：
-> | mem storage | node 0 | node 1 | interleaved |
+> | mem storage | node 0 | interleaved | node 1 |
 > | - | - | - | - |
 > | time | 123.315 | 129.895 | 199.556 |
 > 
